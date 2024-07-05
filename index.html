@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard with Chart.js</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <div class="controls">
+            <label for="chartType">Select Chart Type:</label>
+            <select id="chartType" style="padding-right: 25px;">
+                <option value="bar">Bar Chart</option>
+                <option value="line">Line Chart</option>
+                <option value="pie">Pie Chart</option>
+            </select>
+
+            <label for="dataFilter">Select Data Filter:</label>
+            <select id="dataFilter" style="padding-right: 25px;">
+                <option value="all">All Data</option>
+                <option value="set1">Data Set 1</option>
+                <option value="set2">Data Set 2</option>
+            </select>
+
+            <!-- Button to fetch songs released in India from 2023 -->
+            <button id="fetchDataBtn">Fetch Songs from 2023 in India</button>
+        </div>
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
